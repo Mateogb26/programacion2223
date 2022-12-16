@@ -12,10 +12,8 @@ public class ejercicioUno {
         System.out.println(Arrays.toString(numeros));
 
         int numeroActual = numeros[numeros.length-1];
-        for (int i=numeros.length-1; i>=0; i--) {            
-            if (i>0) {                
-                numeros[i] = numeros[i-1];                
-            }
+        for (int i=numeros.length-1; i>0; i--) {                         
+            numeros[i] = numeros[i-1];                
         }
         numeros[0] = numeroActual;
         System.out.println(Arrays.toString(numeros));
