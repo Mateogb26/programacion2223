@@ -1,4 +1,5 @@
 # BOLETÍN 03
+#### (SUBIR A GITHUB) . FECHA TOPE: 17-12-203
 
 ## Ejercicio 01
 En una tienda de informática, hay una promoción en la venta de teclados:
@@ -7,7 +8,7 @@ En una tienda de informática, hay una promoción en la venta de teclados:
 - Si se compran entre 4 y 8 el precio de cada teclado es de 26€
 - Si se compran menos de 4 el precio es de 30€ cada uno.
 
-Escribe el algoritmo para saber cuánto pagará un cliente según el número de teclados que compra. Mostrar el número de teclados a comprar y el total a pagar.
+Escribe el algoritmo para saber cuanto pagará un cliente según el número de teclados que compra. Mostrar el número de teclados a comprar y el total a pagar.
 
 EJEMPLO:
 

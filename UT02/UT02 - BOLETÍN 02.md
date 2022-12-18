@@ -1,3 +1,5 @@
+#### (SUBIR A GITHUB) . FECHA TOPE: 17-12-2022
+
 1. Realiza el control de acceso a una zona secreta. El programa nos pedirá la combinación para entrar. Si no acertamos, se nos mostrará el mensaje “Lo siento, no puedes entrar” y si acertamos mostrará “PUEDES PASAR”. Los requisitos del programa son:
   - La combinación será un número de 4 cifras.
   - Tendremos cuatro oportunidades para abrir la caja fuerte.

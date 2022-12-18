@@ -1,3 +1,5 @@
+#### (SUBIR A GITHUB) . FECHA TOPE: 17-12-2022
+
 1. Escribe un programa que lea 15 números por teclado y que los almacene en un array. A continuación el programa debe rotar los elementos de ese array, es decir, el elemento de la posición 0 debe pasar a la posición 1, el de la 1 a la 2, etc. El número que se encuentra en la última posición debe pasar a la posición 0. Finalmente, muestra el contenido del array.
 2. Escribe un programa que pida dos número por teclado : **N** y **M**. A continuación el programa creará un array de tamaño **N** e irá pidiendo números por pantalla, pero solo guardará en el array aquellos que sean múltiplos de **M**.
      El resultado debe ser parecido al siguiente:

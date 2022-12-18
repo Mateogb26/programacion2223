@@ -1,3 +1,5 @@
+#### (SUBIR A GITHUB) . FECHA TOPE: 17-12-2022
+
 1. Escribe un programa que declare 5 variables de tipo char. A continuación, Realiza otra variable como cadena de caracteres y asígnale como valor la concatenación de las anteriores 5 variables. Por último, muestra la cadena de caracteres por pantalla. Te dará un error, soluciónalo y explica cómo lo has hecho. 
 
 2. Realiza un programa que pida una cadena de texto por teclado y luego muestre cada palabra de la cadena en una línea distinta.

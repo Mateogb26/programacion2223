@@ -1,8 +1,9 @@
 #IES LOS ALBARES
-## PROGRAMACIÓN 22-23 / BOLETÍN 02
+## PROGRAMACIÓN 22-23 / BOLETÍN 02 
+#### (SUBIR A GITHUB) . FECHA TOPE: 17-12-203
 ### 1. Tu edad. 
 Haz un programa en pseudocódigo para saber la edad de una persona cualquiera a partir de su fecha de nacimiento con todos sus datos; día, mes y año de nacimiento. Se mostrará sólo los años que tienes
-La fecha actual la decidimos nostros de manera interna.
+La fecha actual la decidimos nosOtros de manera interna.
 
 **EJEMPLO**
 

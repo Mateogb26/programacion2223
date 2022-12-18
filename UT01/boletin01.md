@@ -1,5 +1,8 @@
 #IES LOS ALBARES
 ## PROGRAMACIÓN 22-23 / BOLETÍN 01
+### NOTA : ESTE BOLETÍN CONTARÁ COMO NOTA DE CLASE.
+### (OPCIONAL: SUBIR A GITHUB)
+
 ### 1. El Mayor. 
 Haz un programa en pseudocodigo que pida dos números por consola y devuelva el mayor: 
 

@@ -1,3 +1,4 @@
+
 1. Escribir un programa que muestre los números pares comprendidos entre el 1 y el 200. Para ello utiliza un contador y suma de 2 en 2.
 1. Escribir un programa en Java que calcule y muestre el mayor de 10 números pedidos.
 2. Escribir un programa que pida por pantalla un numero menor que 100 (que llamaremos  'numero') y calcule la suma de los números de 1 hasta ‘numero’.
