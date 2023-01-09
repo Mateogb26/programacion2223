@@ -372,11 +372,14 @@ Si tomamos como ejemplo una clase Perro que extiende de la clase Animal que exti
 En Java solo se extiende de una clase. No existe la herencia múltiple. En otros lenguajes sí, pero en Java no. Sin embargo, en cuanto a la implementación de interfaces, Java sí admite que implementemos varias. Por ejemplo, podríamos tener una clase que fuera Clonable, Printable, SerializabIe, que son interfaces del API de Java , lo que básicamente significa que existe la opción de obligar a esa clase a implementar métodos de varias interfaces, esos métodos que la harían clonable, printable, serializable.
 
 ### Sobrecarga y sobrescritura
-Veamos dos conceptos cuyo nombre quizás nos confunda, pero que no son lo mismo. Me refiero a la sobrecarga (averloading) y a la sobrescritura (averwriting).
+Veamos dos conceptos cuyo nombre quizás inducen a confusión, pero que no hacen lo mismo. Son la **sobrecarga** (overloading) y la **sobrescritura** (overwriting).
 
-Hablamos de sobrecarga cuando hay varios métodos con el mismo nombre, pero con parámetros distintos. Por ejemplo, el método substring de la clase String. Si te fijas en la figura siguiente, que podemos encontrar en la documentación oficial  del API de la clase String de Java, encontramos dos métodos llamados igual (substring), pero uno recibe como parámetro un entero, beginIndex, índice de inicio, mientras que el otro recibe dos enteros: beginIndex y endIndex, índices de comienzo y fin.
+Hablamos de sobrecarga cuando hay varios métodos con el mismo nombre, pero con parámetros distintos. Por ejemplo, el método substring de la clase String: 
 
 ![ejemplo sobrecarga](_resources/ut04_02.png)
+(Esta Imagen la podemos encontrar en la documentación oficial  del API de la clase String de Java)
+
+Si nos fijamos, encontramos dos métodos llamados igual (substring), pero uno recibe como parámetro un entero, beginIndex, índice de inicio, mientras que el otro recibe dos enteros: beginIndex y endIndex, índices de comienzo y fin.
 
 Estos métodos nos devuelven una subcadena de la cadena de texto que reciben. En el primer caso, nos devolverá la subcadena desde la posición recibida hasta el final, mientras que el segundo tomará la subcadena entre las dos posiciones definidas.
 
