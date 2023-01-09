@@ -211,7 +211,48 @@ Es una buena práctica hacer que los atributos sean privados y usar getters y se
 
 ### Visibilidad
 
-La visibilidad de los métodos y las variables los veremos más adelante, a modo de recordatorio, podemos repsasar los tres tipos de variables que Java proporciona:
+La visibilidad de una clase, método o atributo en Java se refiere a cuánto es accesible desde otras partes del código. Hay cuatro niveles de visibilidad en Java:
+
+1.  `public`: Este nivel de visibilidad significa que el elemento es accesible desde cualquier parte del código.
+    
+2.  `protected`: Este nivel de visibilidad significa que el elemento es accesible desde la clase en la que se define y todas las clases que heredan de ella.
+    
+3.  `default` (también conocido como "package private"): Este nivel de visibilidad significa que el elemento es accesible solo desde la clase en la que se define y otras clases del mismo paquete.
+    
+4.  `private`: Este nivel de visibilidad significa que el elemento es accesible solo desde la clase en la que se define.
+    
+Es importante tener en cuenta que, por defecto, los elementos en Java tienen visibilidad de paquete. Si no se especifica ningún modificador de acceso, se asume que el elemento es de paquete.
+
+Ejemplo:
+
+```java
+public class MiClase {
+  private int atributoPrivado;
+  protected int atributoProtegido;
+  int atributoPaquete; // default visibility
+  public int atributoPublico;
+  
+  private void metodoPrivado() {
+    // código
+  }
+  
+  protected void metodoProtegido() {
+    // código
+  }
+  
+  void metodoPaquete() { // default visibility
+    // código
+  }
+  
+  public void metodoPublico() {
+    // código
+  }
+}
+```
+
+En este ejemplo, `atributoPrivado` y `metodoPrivado` solo son accesibles desde `MiClase`, mientras que `atributoProtegido` y `metodoProtegido` son accesibles desde `MiClase` y cualquier clase que herede de `MiClase`. `atributoPaquete` y `metodoPaquete` son accesibles solo desde `MiClase` y otras clases del mismo paquete, mientras que `atributoPublico` y `metodoPublico` son accesibles desde cualquier parte del código.
+
+La visibilidad de los métodos y las variables los veremos más adelante, a modo de recordatorio, podemos repasar los tres tipos de variables que Java proporciona:
 
 - **Variables de clase**: las variables de clase, también conocidas como variables estáticas, se declaran con la palabra clave static en una clase, pero fuera de un método, constructor o bloque. Solo habría una copia de cada variable de clase por clase, independientemente de cuántos objetos se creen a partir de ella.
 
