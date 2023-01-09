@@ -329,7 +329,7 @@ Los modificadores `public` y `private`, por otro lado, definen los dos extremos 
 
 En la siguiente imagen podemos ver la visibilidad de las variables y los métodos dependiendo de los modificadores usados en su creación:
 
-![ambito variables.png](_resources/ut04_01.png)
+![ambito_variables.png](_resources/ut04_01.png)
 
 El tercer modificador que podemos usar es  `protected`. Este permite permisos de acceso especiales para las subclases. Al contrario de lo que pueda parecer, `protected` es un poco menos restrictivo que el nivel predeterminado de accesibilidad. Además de las clases otorgadas de acceso predeterminado en el mismo paquete, los miembros protegidos son visibles para las subclases de la clase, incluso si están definidos en un paquete diferente.
 
