@@ -17,10 +17,10 @@ public class App {
             System.out.println("0: SALIR");
             opcion = sc.nextInt();
             if (opcion == 1) {
-
+                // POR HACER
             }
             if (opcion == 2) {
-
+                // POR HACER
             }
             if (opcion == 0 ) {
                 break;
