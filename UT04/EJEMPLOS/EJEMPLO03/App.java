@@ -17,7 +17,10 @@ public class App {
             System.out.println("0: SALIR");
             opcion = sc.nextInt();
             if (opcion == 1) {
-                // POR HACER
+                pedidoUno.agregarProducto();
+                System.out.println("PRODUCTO AÑADIDO. LA" 
+                + " LISTA DE PRODUCTOS ES LA SIGUIENTE");
+                pedidoUno.verListaProductos();
             }
             if (opcion == 2) {
                 // POR HACER
