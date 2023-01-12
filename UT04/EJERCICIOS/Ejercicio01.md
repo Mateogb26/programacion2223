@@ -24,5 +24,37 @@ List<String> items = List.of("1", "a", "2", "a", "3", "a");
       });
 ```
   
+El codigo de base es el siguiente:
+
+```java
+  package ejercicios;
+
+import java.util.List;
+
+public class Estadistica {
+	
+	private List<Integer> listaNumeros;
+	
+	public Estadistica () {
+		// Aqui deberiamos obtener los números
+		listaNumeros = List.of(1,2,3,4,5,4,2,8,3,4);
+		
+	}
+	
+	public Integer mayor() {
+		return 5;
+	}
+	
+	public Integer menor() {
+		return 2;
+	}
+	
+	public double media () {
+		return 5.2;
+	}
+
+}
+```
+  
   
   
