@@ -53,7 +53,9 @@ Los métodos a implementar son:
 - Rotar el array una posicion a la derecha.
 
 Los atributos a usar son:
-- Tamaño del array
-- Valor Mayor del array
+- Un array de tamaño fijo.
+- Tamaño del array.
+- Valor Mayor del array.
 - Valor Menor del array.
+
 Todos han de ser privados.
