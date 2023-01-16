@@ -36,7 +36,7 @@ public class boletinArrays {
     }
 
     public void funcion() {
-        numEjercicio++;
+       
     }
 }
 ```
