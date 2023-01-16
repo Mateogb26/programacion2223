@@ -74,7 +74,7 @@ public class App {
         do {
             System.out.println("******************************");
             System.out.println("*     METODOS DE ARRAYS      *");
-            System.out.println("*    JOAQUIN RIOS VELASCO    *");
+            System.out.println("*      JOAQUIN ALBARES       *");
             System.out.println("******************************");
             System.out.println("ESCRIBE TU OPCIÓN:"); 
             System.out.println("1: Desplazar el ARRAY");
