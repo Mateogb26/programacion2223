@@ -1,17 +1,3 @@
-### RESULTADO DE APRENDIZAJE:
-Escribe y prueba programas sencillos, reconociendo y aplicando los fundamentos de la programación orientada a objetos.	
-
-#### CRITERIOS DE EVALUACIÓN:
-a)	Se han identificado los fundamentos de la programación orientada a objetos.<br>
-b)	Se han escrito programas simples.<br>
-c)	Se han instanciado objetos a partir de clases predefinidas.<br>
-d)	Se han utilizado métodos y propiedades de los objetos.<br>
-e)	Se han escrito llamadas a métodos estáticos.<br>
-f)	Se han utilizado parámetros en la llamada a métodos.<br>
-g)	Se han incorporado y utilizado librerías de objetos.<br>
-h)	Se han utilizado constructores.<br>
-i)	Se ha utilizado el entorno integrado de desarrollo en la creación y compilación de programas simples.
-
 # CONTENIDOS: Introducción a la programación orientación a objetos
 - ## Clases. Atributos, métodos y visibilidad.
 - ## Objetos. Estado, comportamiento e identidad. Mensajes.
