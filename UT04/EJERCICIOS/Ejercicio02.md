@@ -54,6 +54,16 @@ public ArrayList<Integer> getListaMovimientos() {
     return movimientos;
 }
 ```
+Por último, nos falta crear el constructor, que hara el proceso de inicialización de los
+atributos de la clase:
 
+```java
+public Banco() {
+    saldo=0;
+    movimientos = new ArrayList<Integer>();
+}
+```
+
+Si no incializamos las variables, nos dará un error de tipo `NullPointerException`.
 
 
