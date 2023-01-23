@@ -113,29 +113,98 @@ public class Banco {
 Un ejemplo para probar esta clase podría ser el siguiente:
 ```java
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class App {
 
     public static void main(String[] args) {
         Banco miCuenta = new Banco();
-        ArrayList<Integer> miListaMovimientos;
+        Integer opcion;
+        do {
+            mostrarMenu();
+            opcion = leerOpcion();
+            switch (opcion) {
+                case 0:
+                    System.out.println("SAYONARA, BABY");
+                    break;
+                case 1: 
+                    ingresarDinero(miCuenta);
+                    break;
+                case 2:
+                    retirarDinero(miCuenta);
+                    break;
+                case 3:
+                    mostrarSaldo(miCuenta);
+                    break;
+                case 4:
+                    verListaMovimientos(miCuenta);
+                    break;                
+                default:
 
-        miCuenta.ingresarCantidad(25);
-        miCuenta.ingresarCantidad(35);
-        miCuenta.retirarCantidad(50);
-        System.out.println("SALDO: " + miCuenta.getSaldo());
-        miListaMovimientos = miCuenta.getListaMovimientos();
-        for (Integer elMovimiento : miListaMovimientos) {
-            if (elMovimiento<0) {
-                System.out.println("Retirada: " + elMovimiento);
+                    break;
             }
-            else {
+
+        } while ( opcion !=0 );                      
+    }
+
+
+
+
+
+    public static void mostrarMenu () {
+        System.out.println("******************************");
+        System.out.println("*     METODOS DE ARRAYS      *");
+        System.out.println("*       IES LOS ALBARES      *");
+        System.out.println("******************************");
+        System.out.println("ESCRIBE TU OPCIÓN:");
+        System.out.println("1: Ingresar Dinero");
+        System.out.println("2: Retirar Dinero");
+        System.out.println("3: Consultar Saldo");
+        System.out.println("4: Ver lista de movimientos");
+        //System.out.println("5: ");
+        System.out.println("0: SALIR");
+    }
+
+    public static Integer leerOpcion() {
+        Scanner sc = new Scanner(System.in);
+        return sc.nextInt();                
+    }
+
+    public static void verListaMovimientos(Banco miCuenta) {
+        ArrayList<Integer> miListaMovimientos = 
+            miCuenta.getListaMovimientos();
+        for (Integer elMovimiento : miListaMovimientos) {
+            if (elMovimiento < 0) {
+                System.out.println("Retirada: " + elMovimiento);
+            } else {
                 System.out.println("Ingreso: " + elMovimiento);
             }
         }
+    }
 
+
+    public static void ingresarDinero(Banco miCuenta) {
+        System.out.println("¿Cuanto dinero vas a ingresar?");
+        Scanner sc = new Scanner(System.in);
+        Integer dinero = sc.nextInt();
+        miCuenta.ingresarCantidad(dinero);
+    }
+
+    public static void retirarDinero(Banco miCuenta) {
+        System.out.println("¿Cuanto dinero vas a retirar?");
+        Scanner sc = new Scanner(System.in);
+        Integer dinero = sc.nextInt();
+        boolean retirado = miCuenta.retirarCantidad(dinero);
+        if (!retirado) {
+            System.out.println("SALDO INSUFICIENTE");
+        }
+    }
+
+    public static void mostrarSaldo(Banco miCuenta) {
+        System.out.println("EL SALDO ES " + miCuenta.getSaldo());
     }
     
     
 }
+
 ```
