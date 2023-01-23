@@ -30,7 +30,7 @@ public void ingresarCantidad(Integer cantidad) {
         saldo = saldo + cantidad;
 }
 ```
-El método de ratirar dinero no debe permitir entrar en números rojos, por lo tanto debemos comprobar que el saldo disponible es mayor que la cantidad a retirar.Para comprobar si se ha podido retirar el dinero, el método devuelve un boolean confirmando la operación:
+El método de retirar dinero no debe permitir entrar en números rojos, por lo tanto debemos comprobar que el saldo disponible es mayor que la cantidad a retirar.Para comprobar si se ha podido retirar el dinero, el método devuelve un boolean confirmando la operación:
 
 ```java
 public boolean retirarCantidad(Integer cantidad) {
@@ -66,7 +66,49 @@ public Banco() {
 
 Si no incializamos las variables, nos dará un error de tipo `NullPointerException`.
 
-Ahora sólo faltaría añadir cada movimiento
+Ahora sólo faltaría añadir cada movimiento en las retiradas e ingresos en nuestro ArrayList.
+La clase Banco quedaría completada de esta manera:
+
+```java
+package Banco;
+
+import java.util.ArrayList;
+
+public class Banco {
+    private Integer saldo;
+    private ArrayList<Integer> movimientos;
+
+    public Banco() {
+        saldo=0;
+        movimientos = new ArrayList<Integer>();
+    }
+
+    public void ingresarCantidad(Integer cantidad) {
+        saldo = saldo + cantidad;
+        movimientos.add(cantidad);
+    }
+
+    public boolean retirarCantidad(Integer cantidad) {
+        if ( saldo>= cantidad) {
+            saldo = saldo - cantidad;
+            movimientos.add((0-cantidad));
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public Integer getSaldo() {
+        return saldo;
+    }
+
+    public ArrayList<Integer> getListaMovimientos() {
+        return movimientos;
+    }
+}
+```
+
 
 Un ejemplo para probar esta clase podría ser el siguiente:
 ```java
