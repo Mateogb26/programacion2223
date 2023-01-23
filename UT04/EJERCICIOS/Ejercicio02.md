@@ -30,5 +30,18 @@ public void ingresarCantidad(Integer cantidad) {
         saldo = saldo + cantidad;
 }
 ```
+El método de ratirar dinero no debe permitir entrar en números rojos, por lo tanto debemos comprobar que el saldo disponible es mayor que la cantidad a retirar.Para comprobar si se ha podido retirar el dinero, el método devuelve un boolean confirmando la operación:
+
+```java
+public boolean retirarCantidad(Integer cantidad) {
+    if ( saldo>= cantidad) {
+        saldo = saldo -cantidad;
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+```
 
 
