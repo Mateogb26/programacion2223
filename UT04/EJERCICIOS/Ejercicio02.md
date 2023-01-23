@@ -66,4 +66,34 @@ public Banco() {
 
 Si no incializamos las variables, nos dará un error de tipo `NullPointerException`.
 
+Ahora sólo faltaría añadir cada movimiento
 
+Un ejemplo para probar esta clase podría ser el siguiente:
+```java
+import java.util.ArrayList;
+
+public class App {
+
+    public static void main(String[] args) {
+        Banco miCuenta = new Banco();
+        ArrayList<Integer> miListaMovimientos;
+
+        miCuenta.ingresarCantidad(25);
+        miCuenta.ingresarCantidad(35);
+        miCuenta.retirarCantidad(50);
+        System.out.println("SALDO: " + miCuenta.getSaldo());
+        miListaMovimientos = miCuenta.getListaMovimientos();
+        for (Integer elMovimiento : miListaMovimientos) {
+            if (elMovimiento<0) {
+                System.out.println("Retirada: " + elMovimiento);
+            }
+            else {
+                System.out.println("Ingreso: " + elMovimiento);
+            }
+        }
+
+    }
+    
+    
+}
+```
