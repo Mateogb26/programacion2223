@@ -22,3 +22,5 @@ public class Banco {
     
 }
 ```
+Ahora vamos con los métodos:
+- El método ingresarCantidad debe recibir la cantidad de dinero a ingresar y debe modificar el saldo de la cuenta sin devolver nada.
