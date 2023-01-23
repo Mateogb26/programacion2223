@@ -44,4 +44,16 @@ public boolean retirarCantidad(Integer cantidad) {
 }
 ```
 
+Para leer los dos atributos de la clase usamos los `getter`:
+```java
+public Integer getSaldo() {
+    return saldo;
+}
+
+public ArrayList<Integer> getListaMovimientos() {
+    return movimientos;
+}
+```
+
+
 
