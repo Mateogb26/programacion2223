@@ -21,3 +21,49 @@ más dinero del que tiene la tarjeta, se debe mostrar un mensaje de error.
   ```
   
 - Además, se crearán los **getter** y **setter** necesarios.
+
+## SOLUCIÓN:
+```java
+package tarjetaregalo;
+
+import java.util.Random;
+
+public class TarjetaRegalo {
+    private Integer saldo;
+    private Integer codigo;
+    
+    public TarjetaRegalo(final Integer saldo) {
+        setSaldo(saldo); 
+        Random pepe = new Random();       
+        codigo = pepe.nextInt(90000) + 10000;       
+    }
+
+    public Integer getSaldo() {
+        return saldo;
+    }
+
+    public Integer getCodigo() {
+        return codigo;
+    }
+    
+
+    public void setSaldo(final Integer saldo) {
+        this.saldo = saldo;
+    }
+
+    public void setCodigo(final Integer codigo) {
+        this.codigo = codigo;
+    }
+
+    public TarjetaRegalo combinarTarjeta(TarjetaRegalo tarjetaDos){
+        int saldoTres = tarjetaDos.getSaldo() + getSaldo();
+        TarjetaRegalo tarjetaTres = new TarjetaRegalo(saldoTres);
+        tarjetaDos.setSaldo(0);
+        setSaldo(0);
+        return tarjetaTres;
+
+    }
+
+}
+```
+
