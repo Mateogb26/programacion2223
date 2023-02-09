@@ -1,6 +1,5 @@
-## EJERCICIO 06: PRODUCTO
+## EJERCICIO 07: PRODUCTO
 
- 
 Crea un programa con una clase llamada Producto con los siguientes atributos: 
 
 - nombre
