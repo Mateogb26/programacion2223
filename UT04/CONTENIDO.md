@@ -374,7 +374,7 @@ Por otro lado, hallamos la **sobrescritura**, que es una técnica ligada a los m
 
 Es recomendable utilizar la anotación `@Override` para marcar los métodos que sobrescriben la implementación de su clase padre. De esta forma, el entorno de desarrollo nos avisará si hacemos algún cambio no permitido en ella, por ejemplo, la lista de parámetros, el tipo de retorno... que no es que podamos hacerlos, es que dejaría de ser una sobrescritura.
 
-### [DESCARGAR EJEMPLO DE CLASE](../_resources/herencia.zip)
+### [DESCARGAR EJEMPLO DE CLASE](_resources/herencia.zip)
 
 ## Principios básicos de la orientación a objetos.
 
