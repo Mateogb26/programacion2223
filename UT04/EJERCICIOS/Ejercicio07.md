@@ -16,10 +16,6 @@ En el `main` de la clase principal `App`, instancia un objeto de la clase Produc
 Pijama - Precio:10€ - IVA:21% - PVP:12,1€
 ```
 
-
-
-
-
  (el PVP es el precio de venta al público, es decir, el precio con IVA). 
 
 Luego, pide un nuevo precio y vuelve a imprimir el mensaje.

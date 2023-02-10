@@ -1,4 +1,5 @@
 # CONTENIDOS: Introducción a la programación orientación a objetos
+
 - ## Clases. Atributos, métodos y visibilidad.
 - ## Objetos. Estado, comportamiento e identidad. Mensajes.
 - ## Encapsulado. Visibilidad.
@@ -35,7 +36,7 @@ Y una vez que hemos creado el objeto (instanciado) , podemos acceder a sus atrib
 ```java
 miObjeto.miPropiedad = "valor";
 miObjeto.miMetodo();
-````
+```
 
 Para que la creación de un objeto funcione como nosotros deseamos, previamente hemos de haber definido  el  constructor o constructores, que son métodos especiales de las clases que definen cómo se crean los objetos de esa clase.  Cada clase tiene al menos un constructor, y puede tener varios constructores con diferentes argumentos.
 
@@ -71,21 +72,21 @@ class MiClase {
 MiClase miObjeto = new MiClase("Juan", 30);
 ```
 
-
 > #### NOMBRES EN JAVA: CamelCase
+> 
 > CamelCase es una convención de nomenclatura que se utiliza a menudo en la programación para nombrar variables, métodos y clases. En CamelCase, las palabras se combinan y se escriben sin espacios, con la primera letra de cada palabra excepto la primera en mayúsculas.
 > 
 > Por ejemplo, en lugar de escribir "numero de cuenta", se escribiría "numeroDeCuenta" utilizando CamelCase.
->  
+> 
 >  Hay dos formas de usar Camel case:
+> 
 > - **lower camelCase**: donde el primer carácter de la primera palabra está en minúsculas. Esta convención generalmente se sigue al nombrar los **métodos** y las **variables**. 
-> Ejemplo: firstName, lastName, etc.
+>   Ejemplo: firstName, lastName, etc.
 > - **upper CamelCase**: también conocido como "title case", donde el primer carácter de la primera palabra está en mayúscula. Esta convención generalmente se sigue al nombrar las **clases** e **interfaces**. 
-> Ejemplo: ClasePrincipal, InterfazVacio, etc.
+>   Ejemplo: ClasePrincipal, InterfazVacio, etc.
 > 
 > Hay otras formas de nombrar las palabras reservadas conocida como **snake_case**, en la que las palabras se separan con guiones bajos.
 > Ej: numero_de_cuenta
-> 
 
 Con frecuencia hallamos muchas clases en nuestros programas, así que hay que organizarlas bien. Para ello recurriremos a los **paquetes**, que son colecciones de clases que encajan
 lógicamente y que pueden interactuar entre ellas.
@@ -104,11 +105,10 @@ La sintaxis genérica es:
 
 ```java
 [visibilidad] [static] tipo nombre ([tipo paramUno] [tipo paramDos] ... [tipo paramN]) {
-	//variables y código
-	[return valor]
+    //variables y código
+    [return valor]
 }
 ```
-
 
 Siendo más específicos, un ejemplo de creación de un método podría ser el siguiente:
 
@@ -178,12 +178,12 @@ De la misma manera, podemos crear un método `setter` para permitir que otras cl
 ```java
   // Atributo de la clase
   private String nombre;
- 
+
   // Getter
   public String getNombre() { 
-	  return nombre; 
-	}
-  
+      return nombre; 
+    }
+
   //Setter
   public void setNombre(String N)
   {
@@ -194,19 +194,18 @@ De la misma manera, podemos crear un método `setter` para permitir que otras cl
 
 Es una buena práctica hacer que los atributos sean privados y usar getters y setters para acceder a ellos y modificarlos, ya que esto le permite controlar cómo otras clases pueden interactuar con los atributos y hacer cumplir cualquier regla o restricción en los valores de los atributos.
 
-
 ### Visibilidad
 
 La visibilidad de una clase, método o atributo en Java se refiere a cuánto es accesible desde otras partes del código. Hay cuatro niveles de visibilidad en Java:
 
-1.  `public`: Este nivel de visibilidad significa que el elemento es accesible desde cualquier parte del código.
-    
-2.  `protected`: Este nivel de visibilidad significa que el elemento es accesible desde la clase en la que se define y todas las clases que heredan de ella.
-    
-3.  `default` (también conocido como "package private"): Este nivel de visibilidad significa que el elemento es accesible solo desde la clase en la que se define y otras clases del mismo paquete.
-    
-4.  `private`: Este nivel de visibilidad significa que el elemento es accesible solo desde la clase en la que se define.
-    
+1. `public`: Este nivel de visibilidad significa que el elemento es accesible desde cualquier parte del código.
+
+2. `protected`: Este nivel de visibilidad significa que el elemento es accesible desde la clase en la que se define y todas las clases que heredan de ella.
+
+3. `default` (también conocido como "package private"): Este nivel de visibilidad significa que el elemento es accesible solo desde la clase en la que se define y otras clases del mismo paquete.
+
+4. `private`: Este nivel de visibilidad significa que el elemento es accesible solo desde la clase en la que se define.
+
 Es importante tener en cuenta que, por defecto, los elementos en Java tienen visibilidad de paquete. Si no se especifica ningún modificador de acceso, se asume que el elemento es de paquete.
 
 Ejemplo:
@@ -217,19 +216,19 @@ public class MiClase {
   protected int atributoProtegido;
   int atributoPaquete; // default visibility
   public int atributoPublico;
-  
+
   private void metodoPrivado() {
     // código
   }
-  
+
   protected void metodoProtegido() {
     // código
   }
-  
+
   void metodoPaquete() { // default visibility
     // código
   }
-  
+
   public void metodoPublico() {
     // código
   }
@@ -256,7 +255,6 @@ Una variable local comienza su vida útil cuando se invoca el método. | El obje
 La variable local es accesible a todos los objetos de la clase. | La variable de instancia tiene diferentes copias para diferentes objetos. | Las variables estáticas solo tienen una sola copia de toda la clase. |
 Se utiliza para almacenar valores necesarios para un método en particular. | Se utiliza para almacenar valores a los que se necesita acceder mediante diferentes métodos de la clase. | Se utiliza para almacenar constantes. |
 
-
 ## Objetos. Estado, comportamiento e identidad. Mensajes.
 
 Cualquier entidad que tiene estado y comportamiento se conoce como objeto. Por ejemplo, una silla, un coche, una mesa, un teclado, etc. Puede ser físico o lógico.
@@ -274,6 +272,7 @@ Un objeto tiene tres características:
 - **Comportamiento**: representa el comportamiento (funcionalidad) de un objeto como depósito, retirada, extracto, etc.
 
 Por ejemplo, supongamos que Lapiz es un objeto. Entonces:
+
 - su nombre es Pepe (podríamos considerarlo como su identidad, aunque sabemos que no es asi).
 - su color es blanco, conocido como su estado. 
 - se utiliza para escribir, por lo que la escritura es su comportamiento.
@@ -286,7 +285,6 @@ Un objeto es una instancia de una clase. Una clase es una plantilla o modelo a p
 - Un objeto es una entidad de tiempo de ejecución.
 - El objeto es una entidad que tiene estado y comportamiento.
 - El objeto es una instancia de una clase.
-
 
 ## Encapsulado. Visibilidad.
 
@@ -310,8 +308,8 @@ De forma predeterminada, las variables y los métodos de una clase son accesible
 
 Los modificadores `public` y `private`, por otro lado, definen los dos extremos en cuanto a visibilidad:
 
--  los métodos y variables declarados como `private` solo son accesibles dentro de su clase. 
--  En el otro extremo del espectro, se puede acceder a los miembros declarados como `public`  desde cualquier clase en cualquier paquete, siempre que se pueda ver la clase en sí. (La clase que contiene los métodos también debe ser pública para verse fuera de su paquete, como discutimos anteriormente). Los miembros públicos de una clase deben definir su funcionalidad más general.
+- los métodos y variables declarados como `private` solo son accesibles dentro de su clase. 
+- En el otro extremo del espectro, se puede acceder a los miembros declarados como `public`  desde cualquier clase en cualquier paquete, siempre que se pueda ver la clase en sí. (La clase que contiene los métodos también debe ser pública para verse fuera de su paquete, como discutimos anteriormente). Los miembros públicos de una clase deben definir su funcionalidad más general.
 
 En la siguiente imagen podemos ver la visibilidad de las variables y los métodos dependiendo de los modificadores usados en su creación:
 
@@ -326,8 +324,8 @@ Sin modificador (default) | clases en el paquete |
 protected | Clases en paquete y subclases dentro o fuera del paquete. |
 public | Todas las clases de todas las aplicaciones |
 
-
 ## Relaciones entre clases.
+
 ### Herencia
 
 La herencia en Java es el proceso de crear una nueva clase a partir de una clase existente, conocida como clase padre o superclase. La clase hija, también conocida como clase derivada, hereda todas las propiedades y comportamientos de la clase padre y puede tener sus propias propiedades y comportamientos adicionales.
@@ -358,6 +356,7 @@ Si tomamos como ejemplo una clase Perro que extiende de la clase Animal que exti
 En Java solo se extiende de una clase. No existe la herencia múltiple. En otros lenguajes sí, pero en Java no. Sin embargo, en cuanto a la implementación de interfaces, Java sí admite que implementemos varias. Por ejemplo, podríamos tener una clase que fuera Clonable, Printable, SerializabIe, que son interfaces del API de Java , lo que básicamente significa que existe la opción de obligar a esa clase a implementar métodos de varias interfaces, esos métodos que la harían clonable, printable, serializable.
 
 ### Sobrecarga y sobrescritura
+
 Veamos dos conceptos cuyo nombre quizás inducen a confusión, pero que no hacen lo mismo. Son la **sobrecarga** (overloading) y la **sobrescritura** (overwriting).
 
 Hablamos de sobrecarga cuando hay varios métodos con el mismo nombre, pero con parámetros distintos. Por ejemplo, el método substring de la clase String: 
@@ -387,8 +386,8 @@ Ya hemos visto de forma básica la mayoría de conceptos en los que se basa la P
 
 - **Polimorfismo**: El polimorfismo es la capacidad de un objeto de tomar diferentes formas. En POO, el polimorfismo se refiere a la habilidad de una clase para tener diferentes implementaciones de un mismo método.
 
-
 #### CRITERIOS DE CALIFICACIÓN:
+
 |--|--|--|--|
 | CUADERNO DE CLASE | PRUEBA ESCRITA | OBSERVACIÓN DIRECTA | BOLETIN EJERCICIOS |
 |20%| 30% | 10% | 40% | 
