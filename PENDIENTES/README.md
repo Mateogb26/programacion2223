@@ -11,13 +11,9 @@ public class App {
     static int pepe=5;
     static int[] juan = { 1, 2, 3 };
     public static void main(String[] args)  {
-        try {
-            
+        try {            
             System.out.println(juan[3]);
-
-            pepe = 12/0;
-
-               
+            pepe = 12/0;               
         }                
         catch (ArithmeticException e) {
             System.out.println("División por cero");
@@ -25,7 +21,6 @@ public class App {
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Valor fuera de limites");
-
         }        
   }
 }
