@@ -21,7 +21,10 @@ public class App {
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Valor fuera de limites");
-        }        
+        }
+        finally {
+            System.out.println(pepe);
+        }
   }
 }
 ```
