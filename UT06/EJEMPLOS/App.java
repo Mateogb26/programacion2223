@@ -4,6 +4,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+/* CODIGO EXTRAIDO DE 
+https://www.w3schools.com/java/java_files.asp
+*/
+
 public class App {
     public static void main(String[] args)  {        
         crea();
