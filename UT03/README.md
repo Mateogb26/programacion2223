@@ -1,3 +1,6 @@
+## INFORMACION
+La fecha tope de entrega de los boletines que teneis pendientes es el 6-03-23.
+
 ### RESULTADO DE APRENDIZAJE:
 Escribe y prueba programas sencillos, reconociendo y aplicando los fundamentos de la programación orientada a objetos.	
 
