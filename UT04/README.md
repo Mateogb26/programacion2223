@@ -1,5 +1,8 @@
 # UT04 - INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS
 
+## INFORMACIÓN
+Los ejercicios para subir son: 6, 8 y 9.
+
 ## RESULTADO DE APRENDIZAJE:
 
 Escribe y prueba programas sencillos, reconociendo y aplicando los fundamentos de la programación orientada a objetos.
