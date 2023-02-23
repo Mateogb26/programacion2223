@@ -23,7 +23,7 @@ public class UT05 {
             
             
         }
-        catch (InputMismatchException e) {
+        catch (Exception e) {
             System.out.println("No has escrito un número");
             
         }
