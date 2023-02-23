@@ -1,7 +1,7 @@
 # UT04 - INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS
 
 ## INFORMACIÓN
-Los ejercicios para subir son: 6, 8 y 9.
+Los ejercicios para subir son: 8 y 9. LA FECHA TOPE PARA LA ENTREGA ES EL 10-03-2023.
 
 ## RESULTADO DE APRENDIZAJE:
 
