@@ -1,9 +1,13 @@
 # ALUMNOS PENDIENTES
 Los alumnos con la materia pendiente deben entregar los siguientes boletines:
 
-### UTO2  - Boletín 02.
-### UTO3 - Boletines ARRAYS y STRINGS.
-### UTO04 - Ejercicios 7, 8 y 9.
+### UT01 - EXAMEN
+### UT02 - Boletín 02.
+### UT03 - Boletines ARRAYS y STRINGS.
+### UT04 - Ejercicios 7, 8 y 9.
+### UT05 - EXAMEN
+### UT06 - EXAMEN
+### UT07 - PRÁCTICA (MAS ABAJO)
 
 
 Las **UT01** , **UT05** y **UT06** se evaluarán mediante un examen basado los ejemplos siguientes:
