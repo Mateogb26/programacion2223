@@ -1,5 +1,5 @@
 
-Ejercicio INTERFACES
+## Ejercicio INTERFACES
 
 Implementa una interface llamada iFigura2D que declare los métodos:  
 
