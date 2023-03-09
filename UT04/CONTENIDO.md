@@ -388,6 +388,110 @@ Ya hemos visto de forma básica la mayoría de conceptos en los que se basa la P
 
 - **Polimorfismo**: El polimorfismo es la capacidad de un objeto de tomar diferentes formas. En POO, el polimorfismo se refiere a la habilidad de una clase para tener diferentes implementaciones de un mismo método.
 
+## INTERFACES 
+Una **interfaz** es es un tipo de referencia que no puede ser instanciada, sino que es una simple declaración de atributos y métodos sin implementación (sin definir el código de los métodos). Por tanto, una interfaz define un conjunto de métodos (y atributos) que deben ser implementados por cualquier clase que implemente dicha interfaz.
+
+Para implementar una interfaz en una clase, debes usar la palabra clave implements seguida del nombre de la interfaz. La clase debe proporcionar implementaciones para todos los métodos definidos en la interfaz.Mediante la construcción de un interfaz, el programador pretende especificar qué caracteriza a una colección de objetos e, igualmente, especificar qué comportamiento deben reunir los objetos que quieran entrar dentro de sea categoría o colección.
+
+> Si una clase es una plantilla para crear objetos, una interfaz es una plantilla para crear clases.
+
+
+Aquí hay un ejemplo de una interfaz llamada Shape que define dos métodos, getArea() y getPerimeter():
+
+```java
+public interface Shape {
+    double getArea();
+    double getPerimeter();
+}
+```
+
+Ahora podemos crear una clase `Rectangle` que implemente la interfaz `Shape` y proporcione implementaciones para los métodos `getArea()` y `getPerimeter()`:
+
+```java
+public class Rectangle implements Shape {
+    private double width;
+    private double height;
+
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    public double getArea() {
+        return width * height;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 2 * (width + height);
+    }
+}
+```
+
+Podemos crear objetos de la clase `Rectangle` y usar los métodos definidos en la interfaz `Shape` para calcular su área y perímetro:
+
+```java
+Rectangle rect = new Rectangle(5.0, 10.0);
+double area = rect.getArea(); // devuelve 50.0
+double perimeter = rect.getPerimeter(); // devuelve 30.0
+```
+
+Una clase puede implementar varias interfaces. Por ejemplo, podríamos tener una clase `Circle` que implemente la interfaz `Shape` y otra interfaz llamada `Resizable`:
+
+```java
+public interface Resizable {
+    void resize(double factor);
+}
+
+public class Circle implements Shape, Resizable {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
+    }
+
+    @Override
+    public void resize(double factor) {
+        radius *= factor;
+    }
+}
+
+```
+La clase `Circle` ahora implementa la interfaz `Resizable`, lo que significa que debe proporcionar una implementación para el método `resize()`. Podemos crear un objeto `Circle` y usar el método `resize()` para cambiar su tamaño:
+
+```java
+Circle circle = new Circle(5.0);
+circle.resize(2.0); // el radio ahora es 10.0
+double area = circle.getArea(); // devuelve 314.1592653589793
+double perimeter = circle.getPerimeter(); // devuelve 62.83185307179586
+```
+
+Si una interfaz define un tipo pero ese tipo no provee de ningún método, podemos preguntarnos: ¿para qué sirven entonces las interfaces en Java?  Pues la respuesta sería que con el uso de interfaces obtenemos dos ventajas de la herencia: 
+
+- favorecer el mantenimiento 
+- extensión de las aplicaciones. 
+
+Un aspecto fundamental de las interfaces en Java es separar la especificación de una clase (qué hace) de la implementación (cómo lo hace). Esto se ha comprobado que da lugar a programas más robustos y con menos errores. 
+
+Es importante tener en cuenta que:
+
+- Una interfaz no se puede instanciar en objetos, solo sirve para implementar clases.
+- Una clase puede implementar varias interfaces (separadas por comas).
+- Una clase que implementa una interfaz debe de proporcionar implementación para todos y cada uno de los métodos definidos en la interfaz.
+- Las clases que implementan una interfaz que tiene definidas constantes pueden usarlas en cualquier parte del código de la clase, simplemente indicando su nombre.
+
+
 #### CRITERIOS DE CALIFICACIÓN:
 
 | CUADERNO DE CLASE | PRUEBA ESCRITA | OBSERVACIÓN DIRECTA | BOLETIN EJERCICIOS |
