@@ -1,3 +1,4 @@
+dentro de la carpeta "resources"
 
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
