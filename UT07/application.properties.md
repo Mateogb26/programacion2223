@@ -1,8 +1,13 @@
-dentro de la carpeta "resources"
+Archivo application.properties dentro de la carpeta "resources"
 
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver  
-spring.datasource.username=usuario  
+#Driver para mysql  
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+##Usuario  
+spring.datasource.username=usuario
+##Contraseña  
 spring.datasource.password=1234  
-spring.datasource.url=jdbc:mysql://localhost:3306/usuarios  
+##Base de datos con la que vamos a trabajar
+spring.datasource.url=jdbc:mysql://localhost:3306/usuarios 
+##Modo de apertura de la base de datos
 spring.jpa.hibernate.ddl-auto=update  
 
